@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Colors.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Colors.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Colors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -35,8 +35,8 @@
       <file leaf-file-name="PApplet.class" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/Downloads/processing-3.0b6-windows32/processing-3.0b6/core/library/core.jar!/processing/core/PApplet.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="1610" column="0" selection-start-line="1610" selection-start-column="0" selection-end-line="1610" selection-end-column="0" />
+            <state relative-caret-position="158">
+              <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -45,19 +45,28 @@
       <file leaf-file-name="Paint.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Paint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="23" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+            <state relative-caret-position="466">
+              <caret line="26" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drawing.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="drawing.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/drawing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1300">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="370">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#822#823#0" expanded="true" />
+                <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
+                <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
+                <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
+                <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
+                <element signature="e#10032#10033#0" expanded="true" />
+                <element signature="e#10085#10086#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,9 +91,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Drawing_2/Drawing2.java" />
+        <option value="$PROJECT_DIR$/src/Colors.java" />
         <option value="$PROJECT_DIR$/src/Paint.java" />
         <option value="$PROJECT_DIR$/src/drawing.java" />
-        <option value="$PROJECT_DIR$/src/Colors.java" />
       </list>
     </option>
   </component>
@@ -451,12 +461,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288835" sideWeight="0.49577615" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288835" sideWeight="0.48944035" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264563" sideWeight="0.32576558" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264563" sideWeight="0.3284055" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264563" sideWeight="0.67423445" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264563" sideWeight="0.6715945" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -488,7 +498,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -501,7 +511,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1600">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
+            <element signature="e#10032#10033#0" expanded="true" />
+            <element signature="e#10085#10086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -525,7 +544,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
+            <element signature="e#10032#10033#0" expanded="true" />
+            <element signature="e#10085#10086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -541,7 +569,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
+            <element signature="e#10032#10033#0" expanded="true" />
+            <element signature="e#10085#10086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -557,7 +594,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
+            <element signature="e#10032#10033#0" expanded="true" />
+            <element signature="e#10085#10086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -565,7 +611,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
+            <element signature="e#10032#10033#0" expanded="true" />
+            <element signature="e#10085#10086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -573,7 +628,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
+            <element signature="e#10032#10033#0" expanded="true" />
+            <element signature="e#10085#10086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -581,39 +645,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Paint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="23" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/drawing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
+            <element signature="e#10032#10033#0" expanded="true" />
+            <element signature="e#10085#10086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Downloads/processing-3.0b6-windows32/processing-3.0b6/core/library/core.jar!/processing/core/PApplet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="1610" column="0" selection-start-line="1610" selection-start-column="0" selection-end-line="1610" selection-end-column="0" />
+        <state relative-caret-position="158">
+          <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drawing_2/Drawing2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Colors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="175">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Paint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="26" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
+            <element signature="e#10032#10033#0" expanded="true" />
+            <element signature="e#10085#10086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

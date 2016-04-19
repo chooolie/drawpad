@@ -1,4 +1,6 @@
 
+ArrayList<Draw_sqr> squares;
+ArrayList<Circle> circles;
 
 
    color BLACK = color(0);//creating variable for black
@@ -23,8 +25,8 @@
    Square square;
    Eraser eraser;
    Clear_scr clear_scr;
-    Draw_sqr currentSqare;
-   
+   Draw_sqr currentSqare;
+   Circle currentCircle;
 
    public void setup()
    {
@@ -38,6 +40,10 @@
         square = new Square();
         eraser = new Eraser();
         clear_scr = new Clear_scr();
+       // sqr_shape = new Sqr_shape();
+       frameRate(30);
+       squares = new ArrayList<Draw_sqr>();
+       circles = new ArrayList<Circle>();
        
         
 
@@ -64,24 +70,34 @@
        {
          square.mouse_detect();
        }
-     if(pnt_or_sq == 3)
+        if(pnt_or_sq == 3)
        {
          eraser.mouse_detect();
        }
-       
         if(pnt_or_sq == 4)
        {
          clear_scr.clearr();
-          
+          clear_scr.clear_squares();
+          clear_scr.clear_circles();
+         col.draw_color_buttons();
+         pnt_or_sq= 1;
        }
-        if(pnt_or_sq == 5)
+       
+       if(pnt_or_sq == 5)
        {
          
          drawing_square();
        }
+       if(pnt_or_sq == 6)
+       {
+         
+         drawing_circle();
+       }
+       
+        
+        
         
    }
-
 
 void drawing_square()
 {
@@ -100,6 +116,22 @@ void drawing_square()
         } 
 }
 
+void drawing_circle()
+{
+     //draw all stored squares first
+        for(Circle ce : circles)
+        {
+          ce.display();
+        }
+    
+        //if we pressed the mouse
+        //and added a new square
+        if (currentCircle != null) 
+        {
+            currentCircle.updateSize(mouseX, mouseY);
+            currentCircle.display();
+        } 
+}
       
  void keyPressed()
  {
@@ -114,23 +146,26 @@ void drawing_square()
    pnt_or_sq = 2;
  }
   
-     if (key == 'e')
+    if (key == 'e')
  {
       
    pnt_or_sq = 3;
  }
-  
-  if (key == 'c')
+   if (key == 'c')
  {
       
    pnt_or_sq = 4;
- }   
- if (key == 'r')
+ }
+  if (key == 'r')
  {
       
    pnt_or_sq = 5;
  }
-
+ if (key == 'e')
+ {
+      
+   pnt_or_sq = 6;
+ }
   
     
     
@@ -148,35 +183,48 @@ void drawing_square()
  {
    pnt_or_sq = 2;
  }
+  
  if(mouseX> 420 && mouseX <635 && mouseY >0 && mouseY<50)
  {
    pnt_or_sq = 3;
  }
-  
-  if(mouseX> 635 && mouseX <850 && mouseY >0 && mouseY<50)
+ if(mouseX> 635 && mouseX <850 && mouseY >0 && mouseY<50)
  {
    pnt_or_sq = 4;
  }
- 
-    if(pnt_or_sq == 5)
+ if(pnt_or_sq == 5)
  {
    
    currentSqare = new Draw_sqr(mouseX,mouseY,color(color_select));
    square_color();
  
  }
+ 
+ if(pnt_or_sq == 6)
+ {
+   
+   currentCircle = new Circle(mouseX,mouseY,color(color_select));
+   square_color();
+ 
+ }
+    
  }//end mouse pressed
- 
- 
- void mouseReleased() 
+    
+
+void mouseReleased() 
 {
   if(pnt_or_sq == 5)
  {
     squares.add(currentSqare.copy());
     currentSqare = null;
  }
+ 
+ if(pnt_or_sq == 6)
+ {
+    circles.add(currentCircle.copy());
+    currentCircle = null;
+ }
 }
-
 
 void square_color()
 {
