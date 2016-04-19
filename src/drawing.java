@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class drawing extends PApplet
 {
     ArrayList<Draw_sqr> squares;
-
+    ArrayList<Circle> circles;
 
     int BLACK = color(0);//creating variable for black
     int WHITE = color(255);//variable for white
@@ -26,15 +26,18 @@ public class drawing extends PApplet
     int pnt_or_sq = 1;
 
     Draw_sqr currentSqare;
+    Circle currentCircle;
 
     public void settings()
     {
 
         size(1900,1000);
         smooth();
-
+        //add  new square when mouse is pressed
+        //store in the arraylist
+        //keep copy of the square
         squares = new ArrayList<Draw_sqr>();
-
+        circles = new ArrayList<Circle>();
     }
 
     public void setup()
@@ -72,11 +75,32 @@ public class drawing extends PApplet
 
             drawing_square();
         }
+        if(pnt_or_sq == 6)
+        {
+
+            drawing_circle();
+        }
 
         //background(255);
 
         //increase_size();
 
+    }
+    void drawing_circle()
+    {
+        //draw all stored squares first
+        for(Circle ce : circles)
+        {
+            ce.display();
+        }
+
+        //if we pressed the mouse
+        //and added a new square
+        if (currentCircle != null)
+        {
+            currentCircle.updateSize(mouseX, mouseY);
+            currentCircle.display();
+        }
     }
 
 
@@ -437,14 +461,13 @@ public class drawing extends PApplet
 
     void drawing_square()
     {
-        //draw all stored squares first
+        //stored squares drawn
         for(Draw_sqr sq : squares)
         {
             sq.display();
         }
 
-        //if we pressed the mouse
-        //and added a new square
+        //new square added if we press the mouse
         if (currentSqare != null)
         {
             currentSqare.updateSize(mouseX, mouseY);
@@ -453,7 +476,7 @@ public class drawing extends PApplet
     }
 
 
-    public void keyPressed()
+     public void keyPressed()
     {
         if (key == 'p')
         {
@@ -520,12 +543,25 @@ public class drawing extends PApplet
             square_color();
 
         }
+        if(pnt_or_sq == 6)
+        {
+
+            currentCircle = new Circle(mouseX,mouseY,color(color_select));
+            square_color();
+
+        }
     }
 
-    public void mouseReleased() {
+    public void mouseReleased()
+    {
         if (pnt_or_sq == 5) {
             squares.add(currentSqare.copy());
             currentSqare = null;
+        }
+        if(pnt_or_sq == 6)
+        {
+            circles.add(currentCircle.copy());
+            currentCircle = null;
         }
     }//for square and circle
     public void square_color()
