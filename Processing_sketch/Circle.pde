@@ -1,4 +1,4 @@
-class Circle
+class Circle //creating circle
 {
    float x, y, x2, y2;
    color col;

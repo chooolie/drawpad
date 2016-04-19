@@ -13,7 +13,7 @@ class Clear_scr
     }
     else
     {
-    squares.remove(0);
+    squares.remove(0);//removes squares from arraylist
     }
    }
    
