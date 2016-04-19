@@ -3,10 +3,12 @@ import processing.core.PApplet;
 
 public class Colors extends PApplet {
 
+drawing dw = new drawing();
 
         public  void draw_color_buttons() {
-            strokeWeight(4);
-            stroke(0);
+            //
+            dw.strokeWeight(4);
+            dw.stroke(0);
             //buttons
             fill(drawing.WHITE);
             rect(0, 0, 210, 50);

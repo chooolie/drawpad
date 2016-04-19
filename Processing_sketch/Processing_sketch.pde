@@ -21,6 +21,7 @@
    Colors col;
    Paint paint;
    Square square;
+   Eraser eraser;
    
 
    public void setup()
@@ -33,6 +34,7 @@
         col = new Colors();
         paint = new Paint();
         square = new Square();
+        eraser = new Eraser();
       
        
         
@@ -60,7 +62,10 @@
        {
          square.mouse_detect();
        }
-     
+     if(pnt_or_sq == 3)
+       {
+         eraser.mouse_detect();
+       }
        
         
         
@@ -84,6 +89,11 @@
    pnt_or_sq = 2;
  }
   
+     if (key == 'e')
+ {
+      
+   pnt_or_sq = 3;
+ }
   
       
 
@@ -103,6 +113,10 @@
  if(mouseX> 210 && mouseX <420 && mouseY >0 && mouseY<50)
  {
    pnt_or_sq = 2;
+ }
+ if(mouseX> 420 && mouseX <635 && mouseY >0 && mouseY<50)
+ {
+   pnt_or_sq = 3;
  }
   
  
