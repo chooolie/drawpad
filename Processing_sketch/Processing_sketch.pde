@@ -20,6 +20,7 @@
 
    Colors col;
    Paint paint;
+   Square square;
    
 
    public void setup()
@@ -31,8 +32,12 @@
         
         col = new Colors();
         paint = new Paint();
-     
+        square = new Square();
+      
+       
+        
 
+    // initialize collection
    }
     
 
@@ -51,7 +56,11 @@
        {
          paint.mouse_detect();
        }
-      
+        if(pnt_or_sq == 2)
+       {
+         square.mouse_detect();
+       }
+     
        
         
         
@@ -59,12 +68,29 @@
    }
 
 
+
+
+      
  void keyPressed()
  {
  if (key == 'p')
  {
-
+      
+   pnt_or_sq = 1;
  }
+     if (key == 's')
+ {
+      
+   pnt_or_sq = 2;
+ }
+  
+  
+      
+
+  
+    
+    
+    
  }
   
   
@@ -74,7 +100,11 @@
  {
   pnt_or_sq =1; 
  }
+ if(mouseX> 210 && mouseX <420 && mouseY >0 && mouseY<50)
+ {
+   pnt_or_sq = 2;
+ }
+  
  
     
  }//end mouse pressed
-    
