@@ -23,6 +23,7 @@
    Square square;
    Eraser eraser;
    Clear_scr clear_scr;
+    Draw_sqr currentSqare;
    
 
    public void setup()
@@ -73,11 +74,31 @@
          clear_scr.clearr();
           
        }
+        if(pnt_or_sq == 5)
+       {
+         
+         drawing_square();
+       }
         
    }
 
 
-
+void drawing_square()
+{
+     //draw all stored squares first
+        for(Draw_sqr sq : squares)
+        {
+          sq.display();
+        }
+    
+        //if we pressed the mouse
+        //and added a new square
+        if (currentSqare != null) 
+        {
+            currentSqare.updateSize(mouseX, mouseY);
+            currentSqare.display();
+        } 
+}
 
       
  void keyPressed()
@@ -103,7 +124,12 @@
  {
       
    pnt_or_sq = 4;
- }      
+ }   
+ if (key == 'r')
+ {
+      
+   pnt_or_sq = 5;
+ }
 
   
     
@@ -131,5 +157,102 @@
  {
    pnt_or_sq = 4;
  }
-    
+ 
+    if(pnt_or_sq == 5)
+ {
+   
+   currentSqare = new Draw_sqr(mouseX,mouseY,color(color_select));
+   square_color();
+ 
+ }
  }//end mouse pressed
+ 
+ 
+ void mouseReleased() 
+{
+  if(pnt_or_sq == 5)
+ {
+    squares.add(currentSqare.copy());
+    currentSqare = null;
+ }
+}
+
+
+void square_color()
+{
+  
+ if(mousePressed)
+       {
+
+
+
+               if (mouseY > 50 && mouseY < 100)
+               {
+                   if (mouseX > 0 && mouseX < 50)
+                   {
+                       color_select = BLACK;
+                       //thickness = 2;
+                   } 
+                   else if (mouseX > 50 && mouseX < 100) 
+                   {
+                       color_select = WHITE;
+                       //thickness = 2;
+                   }
+                   else if (mouseX > 100 && mouseX < 150) 
+                   {
+                       color_select = BLUE;
+                       //thickness = 2;
+                   } 
+                   else if (mouseX > 150 && mouseX < 200)
+                   {
+                       color_select = RED;
+                       //thickness = 2;
+                   } else if (mouseX > 200 && mouseX < 250) 
+                   {
+                       color_select = YELLOW;
+                       //thickness = 2;
+                   } 
+                   else if (mouseX > 250 && mouseX < 300) {
+                       color_select = PURPLE;
+                       //thickness = 2;
+                   } 
+                   else if (mouseX > 300 && mouseX < 350)
+                   {
+                       color_select = LIME;
+                       //thickness = 2;
+                   }
+                   else if (mouseX > 350 && mouseX < 400) 
+                   {
+                       color_select = GREEN;
+                       //thickness = 2;
+                   }
+                   else if (mouseX > 400 && mouseX < 450) 
+                   {
+                       color_select = ORANGE;
+                       //thickness = 2;
+                   }
+                   else if (mouseX > 450 && mouseX < 500)
+                   {
+                       color_select = BROWN;
+                       //thickness = 2;
+                   }
+                   else if (mouseX > 500 && mouseX < 550)
+                   {
+                       color_select = TURQUOISE;
+                       //thickness = 2;
+                   }
+                   else if (mouseX > 550 && mouseX < 600) 
+                   {
+                       color_select = GREY;
+                       //thickness = 2;
+                   }
+                
+
+
+               }
+        
+
+       }
+       
+   } 
+  
