@@ -22,6 +22,7 @@
    Paint paint;
    Square square;
    Eraser eraser;
+   Clear_scr clear_scr;
    
 
    public void setup()
@@ -35,7 +36,7 @@
         paint = new Paint();
         square = new Square();
         eraser = new Eraser();
-      
+        clear_scr = new Clear_scr();
        
         
 
@@ -67,8 +68,11 @@
          eraser.mouse_detect();
        }
        
-        
-        
+        if(pnt_or_sq == 4)
+       {
+         clear_scr.clearr();
+          
+       }
         
    }
 
@@ -95,7 +99,11 @@
    pnt_or_sq = 3;
  }
   
+  if (key == 'c')
+ {
       
+   pnt_or_sq = 4;
+ }      
 
   
     
@@ -119,6 +127,9 @@
    pnt_or_sq = 3;
  }
   
- 
+  if(mouseX> 635 && mouseX <850 && mouseY >0 && mouseY<50)
+ {
+   pnt_or_sq = 4;
+ }
     
  }//end mouse pressed
