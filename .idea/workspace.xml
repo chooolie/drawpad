@@ -36,7 +36,7 @@
         <entry file="jar://$USER_HOME$/Downloads/processing-3.0b6-windows32/processing-3.0b6/core/library/core.jar!/processing/core/PApplet.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="158">
-              <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
+              <caret line="273" column="16" selection-start-line="273" selection-start-column="16" selection-end-line="273" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -55,18 +55,31 @@
       <file leaf-file-name="drawing.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/drawing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
               <folding>
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
                 <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
-                <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
-                <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
                 <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
-                <element signature="e#10032#10033#0" expanded="true" />
-                <element signature="e#10085#10086#0" expanded="true" />
+                <element signature="method#drawing_square#0;class#drawing#0" expanded="false" />
+                <element signature="method#keyPressed#0;class#drawing#0" expanded="false" />
+                <element signature="method#mousePressed#0;class#drawing#0" expanded="false" />
+                <element signature="method#mouseReleased#0;class#drawing#0" expanded="false" />
+                <element signature="method#square_color#0;class#drawing#0" expanded="false" />
+                <element signature="e#15357#15358#0" expanded="true" />
+                <element signature="e#15410#15411#0" expanded="true" />
+                <marker date="1461091386175" expanded="false" signature="4219:7304" placeholder="{...}" />
+                <marker date="1461091386175" expanded="false" signature="7362:10482" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Draw_sqr.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Draw_sqr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,6 +108,7 @@
         <option value="$PROJECT_DIR$/src/Colors.java" />
         <option value="$PROJECT_DIR$/src/Paint.java" />
         <option value="$PROJECT_DIR$/src/drawing.java" />
+        <option value="$PROJECT_DIR$/src/Draw_sqr.java" />
       </list>
     </option>
   </component>
@@ -461,12 +475,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288835" sideWeight="0.48944035" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288835" sideWeight="0.48521647" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264563" sideWeight="0.3284055" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264563" sideWeight="0.33104542" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264563" sideWeight="0.6715945" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264563" sideWeight="0.6689546" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -498,7 +512,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/drawing.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -512,14 +534,17 @@
         <state relative-caret-position="1600">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
             <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
             <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
-            <element signature="e#10032#10033#0" expanded="true" />
-            <element signature="e#10085#10086#0" expanded="true" />
+            <element signature="method#drawing_square#0;class#drawing#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#drawing#0" expanded="false" />
+            <element signature="method#square_color#0;class#drawing#0" expanded="false" />
+            <element signature="e#15357#15358#0" expanded="true" />
+            <element signature="e#15410#15411#0" expanded="true" />
+            <marker date="1461091386175" expanded="false" signature="4219:7304" placeholder="{...}" />
+            <marker date="1461091386175" expanded="false" signature="7362:10482" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -545,14 +570,17 @@
         <state relative-caret-position="200">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
             <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
             <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
-            <element signature="e#10032#10033#0" expanded="true" />
-            <element signature="e#10085#10086#0" expanded="true" />
+            <element signature="method#drawing_square#0;class#drawing#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#drawing#0" expanded="false" />
+            <element signature="method#square_color#0;class#drawing#0" expanded="false" />
+            <element signature="e#15357#15358#0" expanded="true" />
+            <element signature="e#15410#15411#0" expanded="true" />
+            <marker date="1461091386175" expanded="false" signature="4219:7304" placeholder="{...}" />
+            <marker date="1461091386175" expanded="false" signature="7362:10482" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -570,14 +598,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
             <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
             <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
-            <element signature="e#10032#10033#0" expanded="true" />
-            <element signature="e#10085#10086#0" expanded="true" />
+            <element signature="method#drawing_square#0;class#drawing#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#drawing#0" expanded="false" />
+            <element signature="method#square_color#0;class#drawing#0" expanded="false" />
+            <element signature="e#15357#15358#0" expanded="true" />
+            <element signature="e#15410#15411#0" expanded="true" />
+            <marker date="1461091386175" expanded="false" signature="4219:7304" placeholder="{...}" />
+            <marker date="1461091386175" expanded="false" signature="7362:10482" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -595,14 +626,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
             <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
             <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
-            <element signature="e#10032#10033#0" expanded="true" />
-            <element signature="e#10085#10086#0" expanded="true" />
+            <element signature="method#drawing_square#0;class#drawing#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#drawing#0" expanded="false" />
+            <element signature="method#square_color#0;class#drawing#0" expanded="false" />
+            <element signature="e#15357#15358#0" expanded="true" />
+            <element signature="e#15410#15411#0" expanded="true" />
+            <marker date="1461091386175" expanded="false" signature="4219:7304" placeholder="{...}" />
+            <marker date="1461091386175" expanded="false" signature="7362:10482" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -612,14 +646,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
             <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
             <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
-            <element signature="e#10032#10033#0" expanded="true" />
-            <element signature="e#10085#10086#0" expanded="true" />
+            <element signature="method#drawing_square#0;class#drawing#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#drawing#0" expanded="false" />
+            <element signature="method#square_color#0;class#drawing#0" expanded="false" />
+            <element signature="e#15357#15358#0" expanded="true" />
+            <element signature="e#15410#15411#0" expanded="true" />
+            <marker date="1461091386175" expanded="false" signature="4219:7304" placeholder="{...}" />
+            <marker date="1461091386175" expanded="false" signature="7362:10482" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -629,14 +666,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
             <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
             <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
-            <element signature="e#10032#10033#0" expanded="true" />
-            <element signature="e#10085#10086#0" expanded="true" />
+            <element signature="method#drawing_square#0;class#drawing#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#drawing#0" expanded="false" />
+            <element signature="method#square_color#0;class#drawing#0" expanded="false" />
+            <element signature="e#15357#15358#0" expanded="true" />
+            <element signature="e#15410#15411#0" expanded="true" />
+            <marker date="1461091386175" expanded="false" signature="4219:7304" placeholder="{...}" />
+            <marker date="1461091386175" expanded="false" signature="7362:10482" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -646,23 +686,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
             <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
             <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
-            <element signature="e#10032#10033#0" expanded="true" />
-            <element signature="e#10085#10086#0" expanded="true" />
+            <element signature="method#drawing_square#0;class#drawing#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#drawing#0" expanded="false" />
+            <element signature="method#square_color#0;class#drawing#0" expanded="false" />
+            <element signature="e#15357#15358#0" expanded="true" />
+            <element signature="e#15410#15411#0" expanded="true" />
+            <marker date="1461091386175" expanded="false" signature="4219:7304" placeholder="{...}" />
+            <marker date="1461091386175" expanded="false" signature="7362:10482" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/processing-3.0b6-windows32/processing-3.0b6/core/library/core.jar!/processing/core/PApplet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -690,19 +725,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Downloads/processing-3.0b6-windows32/processing-3.0b6/core/library/core.jar!/processing/core/PApplet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="273" column="16" selection-start-line="273" selection-start-column="16" selection-end-line="273" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Draw_sqr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/drawing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding>
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
             <element signature="method#draw_color_buttons#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_cl#0;class#drawing#0" expanded="false" />
-            <element signature="method#mouse_detect_sq#0;class#drawing#0" expanded="false" />
             <element signature="method#mouse_detect_er#0;class#drawing#0" expanded="false" />
-            <element signature="e#10032#10033#0" expanded="true" />
-            <element signature="e#10085#10086#0" expanded="true" />
+            <element signature="method#drawing_square#0;class#drawing#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#drawing#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#drawing#0" expanded="false" />
+            <element signature="method#square_color#0;class#drawing#0" expanded="false" />
+            <element signature="e#15357#15358#0" expanded="true" />
+            <element signature="e#15410#15411#0" expanded="true" />
+            <marker date="1461091386175" expanded="false" signature="4219:7304" placeholder="{...}" />
+            <marker date="1461091386175" expanded="false" signature="7362:10482" placeholder="{...}" />
           </folding>
         </state>
       </provider>

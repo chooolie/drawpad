@@ -4,6 +4,8 @@ import processing.core.PApplet;
 
 public class drawing extends PApplet
 {
+    ArrayList<Draw_sqr> squares;
+
     int BLACK = color(0);//creating variable for black
     int WHITE = color(255);//variable for white
     int BLUE = color(0,0,255);//variable for blue
@@ -20,7 +22,7 @@ public class drawing extends PApplet
     float posX, posY;
     int thickness = 1;
     int color_select = color(0,0,0);
-
+    int pnt_or_sq = 1;
 
 
     public void settings()
@@ -28,6 +30,7 @@ public class drawing extends PApplet
 
         size(1900,1000);
         smooth();
+        squares = new ArrayList<Draw_sqr>();
 
     }
 
@@ -38,11 +41,37 @@ public class drawing extends PApplet
 
     public void draw()
     {
-        mouse_detect_sq();
-        mouse_detect_er();
-        mouse_detect_cl();
-        //background(255);
         draw_color_buttons();
+        if(pnt_or_sq == 1)
+        {
+            mouse_detect_sq();
+        }
+        if(pnt_or_sq == 2)
+        {
+           mouse_detect_cl();
+        }
+        if(pnt_or_sq == 3)
+        {
+            mouse_detect_er();
+        }
+
+        if(pnt_or_sq == 4)
+        {
+//            clear_scr.clearr();
+//            clear_scr.clear_squares();
+//            clear_scr.clear_circles();
+//            col.draw_color_buttons();
+           pnt_or_sq= 1;
+        }
+
+        if(pnt_or_sq == 5)
+        {
+
+            drawing_square();
+        }
+
+        //background(255);
+
         //increase_size();
 
     }
@@ -51,79 +80,92 @@ public class drawing extends PApplet
     public void draw_color_buttons()
     {
 
-        stroke(0);
-        //buttons
-        fill(WHITE);
-        rect(0,0,200,50);
-        fill(BLACK);
-        textSize(25);
-        text("Paintbrush", 25,30);
+                strokeWeight(4);
+                stroke(0);
+                //buttons
+                fill(WHITE);
+                rect(0,0,210,50);
+                fill(BLACK);
+                textSize(25);
+                text("Paintbrush", 25,30);
 
-        fill(WHITE);
-        rect(200,0,200,50);
-        fill(BLACK);
-        textSize(25);
-        text("Square", 225,30);
+                fill(WHITE);
+                rect(210,0,210,50);
+                fill(BLACK);
+                textSize(25);
+                text("Square", 225,30);
 
-        fill(BLACK);
-        rect(0,50,50,50);
-        fill(WHITE);
-        rect(50,50,50,50);
-        fill(BLUE);
-        rect(100,50,50,50);
-        fill(RED);
-        rect(150,50,50,50);
-        fill(YELLOW);
-        rect(200,50,50,50);
-        fill(PURPLE);
-        rect(250,50,50,50);
-        fill(LIME);
-        rect(300,50,50,50);
-        fill(GREEN);
-        rect(350,50,50,50);
-        fill(ORANGE);
-        rect(400,50,50,50);
-        fill(BROWN);
-        rect(450,50,50,50);
-        fill(TURQUOISE);
-        rect(500,50,50,50);
-        fill(GREY);
-        rect(550,50,50,50);
+                fill(WHITE);
+                rect(420,0,215,50);
+                fill(BLACK);
+                textSize(25);
+                text("Eraser", 435,30);
+
+                fill(WHITE);
+                rect(635,0,215,50);
+                fill(BLACK);
+                textSize(25);
+                text("Clear screen", 645,30);
+
+                fill(BLACK);
+                rect(0,50,50,50);
+                fill(WHITE);
+                rect(50,50,50,50);
+                fill(BLUE);
+                rect(100,50,50,50);
+                fill(RED);
+                rect(150,50,50,50);
+                fill(YELLOW);
+                rect(200,50,50,50);
+                fill(PURPLE);
+                rect(250,50,50,50);
+                fill(LIME);
+                rect(300,50,50,50);
+                fill(GREEN);
+                rect(350,50,50,50);
+                fill(ORANGE);
+                rect(400,50,50,50);
+                fill(BROWN);
+                rect(450,50,50,50);
+                fill(TURQUOISE);
+                rect(500,50,50,50);
+                fill(GREY);
+                rect(550,50,50,50);
 
 
-        fill(WHITE);
-        rect(600,50,50,50);
-        stroke(BLACK);
-        strokeWeight(2);
-        line(610, 75,640, 75 );
-        strokeWeight(6);
+                fill(WHITE);
+                rect(600,50,50,50);
+                stroke(BLACK);
+                strokeWeight(2);
+                line(610, 75,640, 75 );
+                strokeWeight(6);
 
-        fill(WHITE);
-        rect(650,50,50,50);
-        stroke(BLACK);
-        strokeWeight(3);
-        line(660, 75,690, 75 );
-        strokeWeight(6);
+                fill(WHITE);
+                rect(650,50,50,50);
+                stroke(BLACK);
+                strokeWeight(3);
+                line(660, 75,690, 75 );
+                strokeWeight(6);
 
-        fill(WHITE);
-        rect(700,50,50,50);
-        stroke(BLACK);
-        strokeWeight(4);
-        line(710, 75,740, 75 );
-        strokeWeight(6);
+                fill(WHITE);
+                rect(700,50,50,50);
+                stroke(BLACK);
+                strokeWeight(4);
+                line(710, 75,740, 75 );
+                strokeWeight(6);
 
-        fill(WHITE);
-        rect(750,50,50,50);
-        stroke(BLACK);
-        strokeWeight(5);
-        line(760, 75,790, 75 );
-        strokeWeight(6);
+                fill(WHITE);
+                rect(750,50,50,50);
+                stroke(BLACK);
+                strokeWeight(5);
+                line(760, 75,790, 75 );
+                strokeWeight(6);
 
-        fill(WHITE);
-        rect(800,50,50,50);
-        stroke(BLACK);
-        strokeWeight(7);
-        line(810, 75,840, 75 );
+                fill(WHITE);
+                rect(800,50,50,50);
+                stroke(BLACK);
+                strokeWeight(7);
+                line(810, 75,840, 75 );
 
 
 
@@ -390,8 +432,176 @@ public class drawing extends PApplet
         posY = mouseY;
     }
 
+    void drawing_square()
+    {
+        //draw all stored squares first
+        for(Draw_sqr sq : squares)
+        {
+            sq.display();
+        }
+
+        //if we pressed the mouse
+        //and added a new square
+        if (currentSqare != null)
+        {
+            currentSqare.updateSize(mouseX, mouseY);
+            currentSqare.display();
+        }
+    }
 
 
+    public void keyPressed()
+    {
+        if (key == 'p')
+        {
+
+            pnt_or_sq = 1;
+        }
+        if (key == 's')
+        {
+
+            pnt_or_sq = 2;
+        }
+
+        if (key == 'e')
+        {
+
+            pnt_or_sq = 3;
+        }
+        if (key == 'c')
+        {
+
+            pnt_or_sq = 4;
+        }
+        if (key == 'r')
+        {
+
+            pnt_or_sq = 5;
+        }
+        if (key == 'e')
+        {
+
+            pnt_or_sq = 6;
+        }
+
+
+
+
+    }
+
+
+    public void mousePressed()
+    {
+        if (mouseX > 0 && mouseX < 210 && mouseY > 0 && mouseY < 50)
+        {
+            pnt_or_sq = 1;
+        }
+        if (mouseX > 210 && mouseX < 420 && mouseY > 0 && mouseY < 50)
+        {
+            pnt_or_sq = 2;
+        }
+
+        if (mouseX > 420 && mouseX < 635 && mouseY > 0 && mouseY < 50)
+        {
+            pnt_or_sq = 3;
+        }
+        if (mouseX > 635 && mouseX < 850 && mouseY > 0 && mouseY < 50)
+        {
+            pnt_or_sq = 4;
+        }
+
+        if(pnt_or_sq == 5)
+        {
+
+            currentSqare = new Draw_sqr(mouseX,mouseY,color(color_select));
+            square_color();
+
+        }
+    }
+
+    public void mouseReleased() {
+        if (pnt_or_sq == 5) {
+            squares.add(currentSqare.copy());
+            currentSqare = null;
+        }
+    }//for square and circle
+    public void square_color()
+    {
+
+        if(mousePressed)
+        {
+
+
+
+            if (mouseY > 50 && mouseY < 100)
+            {
+                if (mouseX > 0 && mouseX < 50)
+                {
+                    color_select = BLACK;
+                    //thickness = 2;
+                }
+                else if (mouseX > 50 && mouseX < 100)
+                {
+                    color_select = WHITE;
+                    //thickness = 2;
+                }
+                else if (mouseX > 100 && mouseX < 150)
+                {
+                    color_select = BLUE;
+                    //thickness = 2;
+                }
+                else if (mouseX > 150 && mouseX < 200)
+                {
+                    color_select = RED;
+                    //thickness = 2;
+                } else if (mouseX > 200 && mouseX < 250)
+                {
+                    color_select = YELLOW;
+                    //thickness = 2;
+                }
+                else if (mouseX > 250 && mouseX < 300) {
+                    color_select = PURPLE;
+                    //thickness = 2;
+                }
+                else if (mouseX > 300 && mouseX < 350)
+                {
+                    color_select = LIME;
+                    //thickness = 2;
+                }
+                else if (mouseX > 350 && mouseX < 400)
+                {
+                    color_select = GREEN;
+                    //thickness = 2;
+                }
+                else if (mouseX > 400 && mouseX < 450)
+                {
+                    color_select = ORANGE;
+                    //thickness = 2;
+                }
+                else if (mouseX > 450 && mouseX < 500)
+                {
+                    color_select = BROWN;
+                    //thickness = 2;
+                }
+                else if (mouseX > 500 && mouseX < 550)
+                {
+                    color_select = TURQUOISE;
+                    //thickness = 2;
+                }
+                else if (mouseX > 550 && mouseX < 600)
+                {
+                    color_select = GREY;
+                    //thickness = 2;
+                }
+
+
+
+            }
+
+
+        }
+
+    }
 
 
     public static void main(String[] args) {
