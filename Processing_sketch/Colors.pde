@@ -28,6 +28,19 @@ class Colors
         fill(BLACK);
         textSize(25);
         text("Clear screen", 645,30); 
+        
+        fill(WHITE);
+        rect(850,0,215,50);
+        fill(BLACK);
+        textSize(25);
+        text("Square shape", 860,30);
+        
+        fill(WHITE);
+        rect(850,50,215,50);
+        fill(BLACK);
+        textSize(25);
+        text("Circle shape", 860,80);        
+        
 
         fill(BLACK);
         rect(0,50,50,50);
@@ -88,6 +101,8 @@ class Colors
         stroke(BLACK);
         strokeWeight(7);
         line(810, 75,840, 75 );
+        
+        
     }
 
   

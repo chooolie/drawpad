@@ -1,10 +1,11 @@
 import processing.core.PApplet;
-
+import java.util.ArrayList;
 
 
 public class drawing extends PApplet
 {
     ArrayList<Draw_sqr> squares;
+
 
     int BLACK = color(0);//creating variable for black
     int WHITE = color(255);//variable for white
@@ -24,12 +25,14 @@ public class drawing extends PApplet
     int color_select = color(0,0,0);
     int pnt_or_sq = 1;
 
+    Draw_sqr currentSqare;
 
     public void settings()
     {
 
         size(1900,1000);
         smooth();
+
         squares = new ArrayList<Draw_sqr>();
 
     }
