@@ -7,6 +7,8 @@ class Clear_scr
    
    void clear_squares()
    {
+     
+     //removes square array if its not empty
       if(squares.size() == 0)
     {
 
@@ -19,6 +21,8 @@ class Clear_scr
    
    void clear_circles()
    {
+     
+     //emptys circles arraylist if not empty
      if(circles.size() == 0)
     {
 

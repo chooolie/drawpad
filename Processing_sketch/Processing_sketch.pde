@@ -60,7 +60,7 @@ ArrayList<Circle> circles;
        fill(0);
        stroke(0);
        strokeWeight(2);
-       rect(0,0,852,100);//background of color picker
+       rect(0,0,1067,103);//background of color picker
 
       //choosing which class to call
       //depends on pnt_or_sq variable

@@ -5,7 +5,6 @@ class Square
    color color_select = color(0,0,0);
  
 
-
  
     public void mouse_detect()
     {
