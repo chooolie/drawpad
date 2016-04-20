@@ -32,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PApplet.class" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PApplet.class" pinned="false" current-in-tab="true">
         <entry file="jar://$USER_HOME$/Downloads/processing-3.0b6-windows32/processing-3.0b6/core/library/core.jar!/processing/core/PApplet.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+            <state relative-caret-position="6800">
+              <caret line="273" column="16" selection-start-line="273" selection-start-column="16" selection-end-line="273" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drawing.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="drawing.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/drawing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
+            <state relative-caret-position="797">
               <caret line="560" column="9" selection-start-line="560" selection-start-column="9" selection-end-line="560" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -720,14 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Downloads/processing-3.0b6-windows32/processing-3.0b6/core/library/core.jar!/processing/core/PApplet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Colors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -746,7 +738,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/drawing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
+        <state relative-caret-position="797">
           <caret line="560" column="9" selection-start-line="560" selection-start-column="9" selection-end-line="560" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -760,6 +752,14 @@
             <marker date="1461154244948" expanded="false" signature="5430:8515" placeholder="{...}" />
             <marker date="1461154244948" expanded="false" signature="8573:11693" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/processing-3.0b6-windows32/processing-3.0b6/core/library/core.jar!/processing/core/PApplet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6800">
+          <caret line="273" column="16" selection-start-line="273" selection-start-column="16" selection-end-line="273" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
