@@ -1,5 +1,7 @@
 class Paint
 {
+  
+  //creates different colors nd thickness
    float posX, posY;
    int thickness = 1;
    color color_select = color(0,0,0);
@@ -12,8 +14,6 @@ class Paint
 
         if(mousePressed)
         {
-
-
 
                 if (mouseY > 50 && mouseY < 100)
                 {

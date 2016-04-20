@@ -1,6 +1,8 @@
 class Eraser
 {
-
+//creates eraser
+//different thickness but only one color
+//white
   float posX, posY;
   int thickness;
   //color color_select = color(0,0,0);

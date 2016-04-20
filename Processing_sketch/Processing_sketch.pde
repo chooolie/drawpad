@@ -1,11 +1,8 @@
-//creating an array list of squares and circles
-//used to store the squares and circles until 
-//user releases the mouse key
+//array lists of squares and circles
 ArrayList<Draw_sqr> squares;
 ArrayList<Circle> circles;
 
-//initialising all the colors
-//can be passed to the other classes
+//initialising colors
    color BLACK = color(0);//creating variable for black
    color WHITE = color(255);//variable for white
    color BLUE = color(0,0,255);//variable for blue
@@ -22,7 +19,7 @@ ArrayList<Circle> circles;
    int pnt_or_sq = 1;
    color color_select = color(0,0,0);
 
-
+//classes
    Colors col;
    Paint paint;
    Square square;
@@ -38,6 +35,7 @@ ArrayList<Circle> circles;
        frameRate(30);
        background(255);
         
+        //classes
         col = new Colors();
         paint = new Paint();
         square = new Square();
@@ -64,6 +62,8 @@ ArrayList<Circle> circles;
        strokeWeight(2);
        rect(0,0,852,100);//background of color picker
 
+      //choosing which class to call
+      //depends on pnt_or_sq variable
        col.draw_color_buttons();
        if(pnt_or_sq == 1)
        {
@@ -88,13 +88,17 @@ ArrayList<Circle> circles;
        
        if(pnt_or_sq == 5)
        {
-         
          drawing_square();
+         //so it wont cover color buttons
+         col.draw_color_buttons();
+         
        }
        if(pnt_or_sq == 6)
        {
          
          drawing_circle();
+         // so it wont cover color buttons
+         col.draw_color_buttons();
        }
        
         
@@ -140,33 +144,33 @@ void drawing_circle()
  {
  if (key == 'p')
  {
-      
+     //paint 
    pnt_or_sq = 1;
  }
      if (key == 's')
  {
-      
+     //square paint 
    pnt_or_sq = 2;
  }
   
     if (key == 'e')
  {
-      
+     //eraser 
    pnt_or_sq = 3;
  }
    if (key == 'c')
  {
-      
+      //clear screen
    pnt_or_sq = 4;
  }
   if (key == 'r')
  {
-      
+      //rect - draw squares
    pnt_or_sq = 5;
  }
- if (key == 'e')
+ if (key == 't')
  {
-      
+     //draw circles 
    pnt_or_sq = 6;
  }
   
@@ -178,6 +182,8 @@ void drawing_circle()
   
  void mousePressed()
  {
+   
+   //pos of buttons clicked
  if(mouseX > 0 && mouseX <210 && mouseY >0 && mouseY <50)
  {
   pnt_or_sq =1; 
@@ -195,9 +201,18 @@ void drawing_circle()
  {
    pnt_or_sq = 4;
  }
+ 
+ if(mouseX >850 && mouseX <1015 && mouseY >0 && mouseY <50)
+ {
+   pnt_or_sq = 5;
+ }
+ if(mouseX >850 && mouseX <1015 && mouseY >50 && mouseY <100)
+ {
+   pnt_or_sq = 6;
+ }
  if(pnt_or_sq == 5)
  {
-   
+   //draw square
    currentSqare = new Draw_sqr(mouseX,mouseY,color(color_select));
    square_color();
  
@@ -205,7 +220,7 @@ void drawing_circle()
  
  if(pnt_or_sq == 6)
  {
-   
+   //draw circle
    currentCircle = new Circle(mouseX,mouseY,color(color_select));
    square_color();
  
@@ -218,12 +233,14 @@ void mouseReleased()
 {
   if(pnt_or_sq == 5)
  {
+   //square
     squares.add(currentSqare.copy());
     currentSqare = null;
  }
  
  if(pnt_or_sq == 6)
  {
+   //circle
     circles.add(currentCircle.copy());
     currentCircle = null;
  }
@@ -231,7 +248,7 @@ void mouseReleased()
 
 void square_color()
 {
-  
+  //choose the color or square or circle
  if(mousePressed)
        {
 
