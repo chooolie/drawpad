@@ -72,13 +72,17 @@ public class drawing extends PApplet
 
         if(pnt_or_sq == 5)
         {
-
             drawing_square();
+            //so it wont cover color buttons
+            draw_color_buttons();
+
         }
         if(pnt_or_sq == 6)
         {
 
             drawing_circle();
+            // so it wont cover color buttons
+            draw_color_buttons();
         }
 
         //background(255);
@@ -546,6 +550,14 @@ public class drawing extends PApplet
         if (mouseX > 635 && mouseX < 850 && mouseY > 0 && mouseY < 50)
         {
             pnt_or_sq = 4;
+        }
+        if(mouseX >850 && mouseX <1015 && mouseY >0 && mouseY <50)
+        {
+            pnt_or_sq = 5;
+        }
+        if(mouseX >850 && mouseX <1015 && mouseY >50 && mouseY <100)
+        {
+            pnt_or_sq = 6;
         }
 
         if(pnt_or_sq == 5)

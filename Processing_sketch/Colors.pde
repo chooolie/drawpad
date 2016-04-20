@@ -2,9 +2,9 @@ class Colors
 {
    public void draw_color_buttons()
     {
-  strokeWeight(4);
+        strokeWeight(4);
         stroke(0);
-        //buttons
+        //buttons to choose paintbrush stroke
         fill(WHITE);
         rect(0,0,210,50);
         fill(BLACK);
@@ -17,31 +17,36 @@ class Colors
         textSize(25);
         text("Square", 225,30);
         
+        //eraser button
         fill(WHITE);
         rect(420,0,215,50);
         fill(BLACK);
         textSize(25);
         text("Eraser", 435,30);    
         
+        //clear the screen
          fill(WHITE);
         rect(635,0,215,50);
         fill(BLACK);
         textSize(25);
         text("Clear screen", 645,30); 
         
+        //button to draw a square
         fill(WHITE);
         rect(850,0,215,50);
         fill(BLACK);
         textSize(25);
         text("Square shape", 860,30);
         
+        
+        //button to draw a circle
         fill(WHITE);
         rect(850,50,215,50);
         fill(BLACK);
         textSize(25);
         text("Circle shape", 860,80);        
         
-
+        //color buttons
         fill(BLACK);
         rect(0,50,50,50);
         fill(WHITE);
@@ -67,12 +72,12 @@ class Colors
         fill(GREY);
         rect(550,50,50,50);
 
-
+      //buttons to choose strokeweight
         fill(WHITE);
         rect(600,50,50,50);
         stroke(BLACK);
         strokeWeight(2);
-        line(610, 75,640, 75 );
+        line(610, 75,640, 75 );//line showing thickness
         strokeWeight(6);
 
         fill(WHITE);
