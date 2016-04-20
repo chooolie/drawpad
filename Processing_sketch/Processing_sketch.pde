@@ -1,8 +1,11 @@
-
+//creating an array list of squares and circles
+//used to store the squares and circles until 
+//user releases the mouse key
 ArrayList<Draw_sqr> squares;
 ArrayList<Circle> circles;
 
-
+//initialising all the colors
+//can be passed to the other classes
    color BLACK = color(0);//creating variable for black
    color WHITE = color(255);//variable for white
    color BLUE = color(0,0,255);//variable for blue
